@@ -110,30 +110,15 @@ This repository contains JMeter performance test scenarios for two projects: **B
 ## How to Run the Tests
 
 ### Installation
-
-1. **Clone the Repository**  
-   Open your terminal and run:  
-   `git clone https://github.com/niloycsejnu/Dmoney-REST-API-Testing.git`
-
-2. **Navigate to the Project Directory**  
-   Change your working directory to the cloned repository:  
-   `cd Dmoney-REST-API-Testing`
-
-3. **Install Dependencies**  
-   Install the required dependencies using npm:  
-   `npm install`
-
-### Running the Project
-
-Run the `Report.js` script using Node.js in the terminal:  
-`npx newman run "copy & paste published collection link without inverted comma"`
-Then 
-`node Report.js`
-
-### Expected Output
-
-The script will run tests against the Dmoney REST API and display the results in the terminal.
-
+**Clone the Repository in Apache Jmeter**  
+- Open your terminal and run:  
+   `git clone https://github.com/niloycsejnu/Performance-Testing.git`
+  
+**Execute the following steps using CLI:**
+- For Booking APIs JMeter Collection
+ `jmeter -n -t '.\booking.jmx' -l '.\booking.jtl' -e -o Reports`
+- For Dmoney APIs JMeter Collection
+ `jmeter -n -t '.\dmoney.jmx' -l '.\dmoney.jtl' -e -o Reports`
 
 ## Contact
 
